@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WillGood</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+
+
+            <div class="header-text">
+                <h1>The purpose is to teach <br> bring learning to people.</h1>
+                <span class="square"></span> 
+                <p>There are many variations of passages of lorem ipsum available but the majority have suffered alteration in some form by injected humour or randomised words which dont look even slightly believable.</p>
+                <button class="common-btn"> Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">MISSION</a></li>
+            <li><a href="#">HOW YOU CAN HELP</a></li>
+            <li><a href="#">LOCATION</a></li>
+        </ul>
+    </nav> 
+    <img src="images/menu.png" id="menubtn">
+
+
+<section id="about">
+    <div id="about-left-col">
+        <img src="images/about.png">
+    </div>
+
+    <div class="about-right-col">
+        <div class="about-text">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+    </div> 
+
+</section>
+
+
+
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+
+        sidenav.style.right ="-250px";
+        menubtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+            }
+            else{
+                sidenav.style.right ="-250px";
+            }
+        }
+    </script>
+</body>
+</html>
